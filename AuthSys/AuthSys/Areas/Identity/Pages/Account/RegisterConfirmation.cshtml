@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+    <h3>Client Registred Successfully </h3>
+   The Confirmation Link has been sent to Admin Email, for more info Please visit see <a href="https://cnla.ca/">Canadian Nursary Landscape Association</a> 
+</p>
+    }
+    else
+    {
+<p>
+        Please check your email to confirm your account.
+</p>
+    }
+}
