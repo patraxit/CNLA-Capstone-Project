@@ -33,8 +33,10 @@ namespace AuthSys.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            
-            [Display(Name = "Address")]
+
+            [Display(Name = "Phone Number")]
+            [DataType(DataType.PhoneNumber)]
+            [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid phone number")]
             public string PhoneNumber { get; set; }
            
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hBuhn+46F7TkFEeamPKDaUCIvLKYEFXR4h0/W7pt+CbTHvkEjzcXn/w2LHESwlFl8ATYdDj4uBHDKpxay5qmGw==",
+  "dgSpecHash": "ov+kw5WUFN5jvoiG9SN76BLjPat5F8dQmsK+ivh8SorDvL2d7UG8SWVmwA4lOCyDMoz1Xdk6RPU86tdd7A6lPg==",
   "success": true,
-  "projectFilePath": "C:\\Sheridan\\Semester5\\Capstone Project\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj",
+  "projectFilePath": "C:\\Sheridan\\Semester6\\Capstone Project\\AuthSys (2)\\AuthSys (2)\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\praxi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\praxi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

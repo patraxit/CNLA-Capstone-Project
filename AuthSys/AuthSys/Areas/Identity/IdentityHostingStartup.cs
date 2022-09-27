@@ -18,7 +18,7 @@ namespace AuthSys.Areas.Identity
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<AuthDBContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("AuthDBContextConnection")));
+                        context.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING")));
 
                 services.AddDefaultIdentity<ApplicationUser>(options =>
                 {

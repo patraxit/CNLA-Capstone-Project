@@ -2,10 +2,84 @@
     ViewData["Title"] = "Home Page";
 }
 
-@{ 
-    
+
+@{
+
+
 }
+<style>
+    .gallery-view {
+        align-content: center;
+        padding-left: 100px;
+      
+    }
+    .float-container {
+        border: 3px solid #fff;
+        padding: 20px;
+    }
+
+    .float-child {
+        width: 50%;
+        float: left;
+        padding: 20px;
+        border: 2px solid black;
+    }
+</style>
+
+
+
 <div class="text-center">
+    <br />
     <h1 class="display-4">Welcome To CNLA Doc-Sharing</h1>
-    <p>Learn about <a href="https://cnla.ca">Canadian Nursary Landscape Association </a>.</p>
-</div>
+</div><br />
+
+      <div class="float-container">
+          <div class="float-child">
+              
+                  
+                      <a style="text-decoration:none;" href="@Url.Action("cnlaInnersExterior","Home")">
+
+                          <img src="~/Folder.png" width="75px" />
+                          CNLA - INNERS - EXTERIOR
+                      </a><br />
+                  
+                  
+                      <a style="text-decoration:none;" href="@Url.Action("cnlaInnersRisk","Home")">
+
+                          <img src="~/Folder.png" width="75px" />
+                          CNLA - INNERS - RISK
+                      </a><br />
+                  
+                  
+                      <a style="text-decoration:none;" href="@Url.Action("cnlaInnersLeadership","Home")">
+
+                          <img src="~/Folder.png" width="75px" />
+                          CNLA - INNERS - LEADERSHIP
+                      </a><br />
+                  
+              
+          </div>
+
+          <div class="float-child">
+              
+              <a style="text-decoration:none;" href="@Url.Action("","")">
+
+                  <img src="~/Folder.png" width="75px" />
+                  To be Made...
+              </a><br />
+                  
+                  <a style="text-decoration:none;" href="@Url.Action("","")">
+
+                      <img src="~/Folder.png" width="75px" />
+                      To be Made...
+                  </a><br />
+                  
+                      <a style="text-decoration:none;" href="@Url.Action("","")">
+
+                          <img src="~/Folder.png" width="75px" />
+                          To be Made...
+                      </a><br />
+                 
+          </div>
+          </div>
+

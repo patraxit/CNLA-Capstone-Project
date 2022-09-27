@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace AuthSys.Migrations
+namespace CNLA_Docs.Migrations
 {
     [DbContext(typeof(AuthDBContext))]
     partial class AuthDBContextModelSnapshot : ModelSnapshot

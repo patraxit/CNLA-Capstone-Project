@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sheridan\\Semester5\\Capstone Project\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj": {}
+    "C:\\Sheridan\\Semester6\\Capstone Project\\AuthSys (2)\\AuthSys (2)\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj": {}
   },
   "projects": {
-    "C:\\Sheridan\\Semester5\\Capstone Project\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj": {
+    "C:\\Sheridan\\Semester6\\Capstone Project\\AuthSys (2)\\AuthSys (2)\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sheridan\\Semester5\\Capstone Project\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj",
+        "projectUniqueName": "C:\\Sheridan\\Semester6\\Capstone Project\\AuthSys (2)\\AuthSys (2)\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj",
         "projectName": "CNLA_Docs",
-        "projectPath": "C:\\Sheridan\\Semester5\\Capstone Project\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj",
+        "projectPath": "C:\\Sheridan\\Semester6\\Capstone Project\\AuthSys (2)\\AuthSys (2)\\AuthSys\\AuthSys\\AuthSys\\CNLA_Docs.csproj",
         "packagesPath": "C:\\Users\\praxi\\.nuget\\packages\\",
-        "outputPath": "C:\\Sheridan\\Semester5\\Capstone Project\\AuthSys\\AuthSys\\AuthSys\\obj\\",
+        "outputPath": "C:\\Sheridan\\Semester6\\Capstone Project\\AuthSys (2)\\AuthSys (2)\\AuthSys\\AuthSys\\AuthSys\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
