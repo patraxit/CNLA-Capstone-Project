@@ -995,3 +995,4 @@ C:\Sheridan\Semester6\Capstone Project\AuthSys (2)\AuthSys (2)\AuthSys\AuthSys\A
 C:\Sheridan\Semester6\Capstone Project\AuthSys (2)\AuthSys (2)\AuthSys\AuthSys\AuthSys\obj\Debug\net5.0\ref\CNLA_Docs.dll
 C:\Sheridan\Semester6\Capstone Project\AuthSys (2)\AuthSys (2)\AuthSys\AuthSys\AuthSys\obj\Debug\net5.0\CNLA_Docs.pdb
 C:\Sheridan\Semester6\Capstone Project\AuthSys (2)\AuthSys (2)\AuthSys\AuthSys\AuthSys\obj\Debug\net5.0\CNLA_Docs.genruntimeconfig.cache
+C:\Sheridan\Semester6\Capstone Project\AuthSys (2)\AuthSys (2)\AuthSys\AuthSys\AuthSys\obj\Debug\net5.0\Razor\Views\Files1\Index.cshtml.g.cs
