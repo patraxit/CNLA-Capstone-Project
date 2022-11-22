@@ -1,0 +1,78 @@
+﻿@model FileClass
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CNLA</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand font-weight-bolder text-white" asp-area="" asp-controller="Home" asp-action="Index">CNLA_Docs</a>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <partial name="../Shared/_LoginPartial.cshtml" />
+                </div>
+                <asp:HyperLink class="align-content-end text-white" runat="server" ID="test" CssClass="btn btn-primary" Text="Contact Us"><i class="fa fa-phone"></i> Contact Us</asp:HyperLink>
+
+            </div>
+        </nav>
+    </header>
+
+     <form asp-controller="Files1" asp-action="UploadPdfs" method= "post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <hr/>
+            <button type="submit">Upload</button>
+
+        </form>
+
+        @if (Model != null)
+                    {
+                        <hr/>
+                        <table class="table table-bordered table-striped" cellpadding="0" cellspacing="0" border="1">
+                            <thead>
+                                <tr>
+
+                                    <th>PDF Name</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(FileClass file in Model.Files)
+                        {
+                            <tr>
+
+                                <td>@file.Name</td>
+                                <td>
+                                    <a href="../Files1/UploadPdfs?fileName=@file.Name" style="margin-right:10px;"> View PDF</a>
+                                </td>
+                            </tr>
+                        }
+
+                            </tbody>
+                        </table>
+                    }
+
+        <br /><br />
+    <embed id="embPDF" src="/files/@Model.Name" style="width:100%; height:1200px;" />
+
+    <footer class="border-top footer text-muted">
+        <nav class="navbar-dark bg-dark">
+            <div class="container text-white">
+                &copy; 2022 - TrailBlazer.Inc - <a class="text-white-50" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> | <a class="text-white-50" href="https://cnla.ca">Canadian Nursary Landscape Association </a>
+
+
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

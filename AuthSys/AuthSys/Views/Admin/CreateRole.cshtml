@@ -1,0 +1,26 @@
+﻿
+@model CNLA_Docs.Models.CreateRoleViewModel
+
+
+@{
+    ViewData["Title"] = "Create role";
+
+}
+
+<h1>Create new role</h1>
+
+
+<form method="post">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="RoleName">Role Name</label>
+                <input asp-for="RoleName" class="form-control" />
+                <span asp-validation-for="RoleName" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Create role</button>
+        </div>
+</form>

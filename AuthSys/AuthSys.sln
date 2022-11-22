@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CNLA_Docs", "AuthSys\CNLA_Docs.csproj", "{E08E6009-BCF3-4F28-ABA2-5B72231CB796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNLA_DocsTests", "CNLA_DocsTests\CNLA_DocsTests.csproj", "{FD313A4E-3715-47A8-B775-2EEB93939D4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CNLA_DocsTests", "CNLA_DocsTests\CNLA_DocsTests.csproj", "{FD313A4E-3715-47A8-B775-2EEB93939D4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
