@@ -25,8 +25,9 @@ namespace AuthSys.Areas.Identity
                     options.SignIn.RequireConfirmedAccount = false;
                     options.Password.RequireLowercase = false;
                     options.Password.RequireUppercase = false;
-                })
+                }).AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<AuthDBContext>();
+
             });
         }
     }

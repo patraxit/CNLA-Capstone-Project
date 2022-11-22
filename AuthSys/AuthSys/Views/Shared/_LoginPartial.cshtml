@@ -13,13 +13,43 @@
 
         </li>
         <li class="nav-item"> <a id="manage" class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index">Profile</a></li>
-        
-        <li class="nav-item">
-            <form  id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                <button  id="logout" type="submit" class="nav-link btn btn-link text-white all">Logout</button>
 
-            </form>
+        <li class="nav-item">
+            @if (User.Identity.IsAuthenticated)
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    <a class="nav-link text-white" href="@Url.Action("UploadPdfs","Files1")">Add Manuals</a>
+                }
+            }
         </li>
-    }
+        <li class="nav-item">
+            @if (User.Identity.IsAuthenticated)
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    <a class="nav-link text-white" asp-area=" " asp-controller="Admin" asp-action="CreateRole">Create a role</a>
+                }
+            }
+        </li>
+
+        <li class="nav-item">
+            @if (User.Identity.IsAuthenticated)
+            {
+                if (User.IsInRole("Admin"))
+                {
+                
+                    <a class="nav-link text-white" href='/Identity/Account/Register'>Add User</a>
+                
+            }
+        }
+            </li>
+            @* <li class="nav-item">
+                    <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button id="logout" type="submit" class="nav-link btn btn-link text-white all">Logout</button>
+
+                    </form>
+                </li>*@
+        }
 
 </ul>
